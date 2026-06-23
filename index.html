@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+      var domainName = window.location.hostname;
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain for Sale</title>
+    <meta name="description" content="Premium domain available for purchase. Contact the owner today.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', system-ui, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            max-width: 720px;
+            margin: 40px auto;
+            padding: 60px 50px;
+            background: rgba(15, 23, 42, 0.95);
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        h1 {
+            font-size: 3.2rem;
+            margin: 0 0 12px 0;
+            background: linear-gradient(90deg, #60a5fa, #a5b4fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .tagline {
+            font-size: 1.35rem;
+            color: #94a3b8;
+            margin-bottom: 40px;
+        }
+        
+        .owner {
+            margin: 40px 0;
+        }
+        
+        .contact-btn {
+            display: inline-block;
+            margin: 30px 0;
+            padding: 16px 40px;
+            background: linear-gradient(90deg, #3b82f6, #6366f1);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.15rem;
+            font-weight: 600;
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+            transition: all 0.3s;
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(59, 130, 246, 0.4);
+        }
+        
+        footer {
+            margin-top: 50px;
+            font-size: 0.95rem;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="mainTitle">DOMAIN FOR SALE</h1>
+        <p class="tagline">Premium domain available for immediate purchase</p>
+        
+        <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto 30px;">This domain is actively listed for sale by the owner.</p>
+        
+        <div class="owner">
+            <h2>Owner</h2>
+            <p style="font-size: 1.25rem;"><strong>Corey Koopmans</strong><br>
+            Managing Partner, ScriptedFuture</p>
+        </div>
+        
+        <a href="mailto:info@scriptedfuture.com" class="contact-btn">Contact for Purchase Inquiry</a>
+        
+        <p><strong>Interested in acquiring this domain?</strong><br>
+        Please email <a href="mailto:info@scriptedfuture.com" style="color:#60a5fa;">info@scriptedfuture.com</a></p>
+        
+        <footer>
+            © 2026 Corey Koopmans • All Rights Reserved<br>
+            This domain is offered for sale directly by the owner.
+        </footer>
+    </div>
+</body>
+<script>
+    document.title = domainName + " - Domain for Sale";
+
+    document.getElementById('mainTitle').textContent = domainName.toUpperCase() + " FOR SALE";
+</script>
+</html>
