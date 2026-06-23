@@ -24,7 +24,7 @@
         }
         
         .container {
-            max-width: 720px;
+            max-width: 820px;
             margin: 40px auto;
             padding: 60px 50px;
             background: rgba(15, 23, 42, 0.95);
@@ -81,12 +81,12 @@
 <body>
     <div class="container">
         <h1 id="mainTitle">DOMAIN FOR SALE</h1>
+        <h2 id="subTitle">For sale</h2>
         <p class="tagline">Premium domain available for immediate purchase</p>
         
-        <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto 30px;">This domain is actively listed for sale by the owner.</p>
+        <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto 30px;">This domain is actively listed for sale by the owner:</p>
         
         <div class="owner">
-            <h2>Owner</h2>
             <p style="font-size: 1.25rem;"><strong>Corey Koopmans</strong><br>
             Managing Partner, ScriptedFuture</p>
         </div>
@@ -105,6 +105,6 @@
 <script>
     document.title = domainName + " - Domain for Sale";
 
-    document.getElementById('mainTitle').textContent = domainName.toUpperCase() + " FOR SALE";
+    document.getElementById('mainTitle').textContent = domainName.toUpperCase();
 </script>
 </html>
